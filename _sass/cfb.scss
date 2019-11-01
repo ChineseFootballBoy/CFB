@@ -1,0 +1,34 @@
+.clubs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.country_section {
+    width: 100%;
+    background-color:  #AFEEEE;
+    margin-bottom: 30px;
+}
+
+.club_item {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.club_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.club_content {
+    flex: 4;
+}

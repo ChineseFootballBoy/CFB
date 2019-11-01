@@ -1,0 +1,33 @@
+<header class="site-header">
+
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <img src="data:image/png;base64,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"/>
+      {{ site.title | escape }}
+    </a>
+    {%- if titles_size > 0 -%}
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </nav>
+    {%- endif -%}
+  </div>
+</header>

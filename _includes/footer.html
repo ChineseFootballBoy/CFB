@@ -1,0 +1,19 @@
+{%- assign social = site.minima.social_links -%}
+
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">      
+      <div class="footer-col">
+        {%- if social.weibo -%}
+          <a href="https://weibo.com/{{ social.weibo | cgi_escape | escape }}" title="{{ social.weibo | escape }}" target="__blank"><img class="svg-icon grey" src="{{ '/assets/weibo.ico' | relative_url }}"/></a>
+        {%- endif -%}
+        {{- site.description | escape -}}
+      </div>
+    </div>
+
+  </div>
+
+</footer>
